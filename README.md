@@ -1,7 +1,7 @@
 # YsFactory
 Amazon LightSailで作成したY's Factoryのサイトリソース
 
-# ブランチ管理
+## ブランチ管理
 各ブランチの用途は以下の通り。
 1. main
    公開用の最新バージョン
