@@ -11,3 +11,6 @@ Amazon LightSailで作成したY's Factoryのサイトリソース
    各開発単位で作成するブランチ。
 4. fix-[anywords]
    各修正単位で作成するブランチ。
+
+## 開発に使用するツール
+1. VSCode
