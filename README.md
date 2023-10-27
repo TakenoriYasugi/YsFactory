@@ -14,3 +14,13 @@ Amazon LightSailで作成したY's Factoryのサイトリソース
 
 ## 開発に使用するツール
 1. VSCode
+2. Node.js
+3. React
+4. MUI
+
+## Reactプロジェクト作成コマンド(Typescript)
+
+```
+npx create-react-app {Project Name} --template typescript
+'''
+
