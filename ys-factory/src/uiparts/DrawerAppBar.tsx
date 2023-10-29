@@ -101,9 +101,7 @@ export default function DrawerAppBar(props: Props) {
       </nav>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-        <Typography>
-          見つけてくださりありがとうございます。
-        </Typography>
+        
       </Box>
     </Box>
   );
