@@ -8,6 +8,7 @@ import mainLogo from '../images/mainlogo.webp'
 
 const TopPage = () => {
 
+    // ロゴを枠内に収めるためのスタイル
     const logoStyle = {
         maxWidth: "100%",
         height: "auto",

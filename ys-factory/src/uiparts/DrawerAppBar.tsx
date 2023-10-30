@@ -14,28 +14,22 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-}
-
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
 
-export default function DrawerAppBar(props: Props) {
-  const { window } = props;
+export default function DrawerAppBar() {
+  // Drawer（ハンバーガーメニュー）が開いているかどうかの状態を保持
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
+  // スマホで閲覧した際に表示するハンバーガーメニュー
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
+        Menu
       </Typography>
       <Divider />
       <List>
@@ -50,9 +44,8 @@ export default function DrawerAppBar(props: Props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
-
   return (
+    // 以降のコンポーネントはsx props内のdisplayスタイルを用いてモバイル表示とPC表示を切り分けている。
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav">
@@ -62,6 +55,8 @@ export default function DrawerAppBar(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
+            // sm(画面幅600px以上)の場合にdisplayをnone(非表示)にする。 = モバイルでのみ表示
+            // 以降省略
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
@@ -69,7 +64,7 @@ export default function DrawerAppBar(props: Props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1}}
           >
             Y's Factory
           </Typography>
@@ -84,7 +79,6 @@ export default function DrawerAppBar(props: Props) {
       </AppBar>
       <nav>
         <Drawer
-          container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
