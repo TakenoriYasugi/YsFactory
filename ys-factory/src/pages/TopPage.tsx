@@ -11,7 +11,7 @@ const TopPage = () => {
 
     return (
         <>
-                <img className='logo' src={headerImage} />
+            <img className='logo' src={headerImage} />
            
         </>
     );
