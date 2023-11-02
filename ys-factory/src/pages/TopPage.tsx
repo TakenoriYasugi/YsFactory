@@ -4,18 +4,14 @@
  */
 
 import { Container } from '@mui/material';
-import mainLogo from '../images/mainlogo.webp' ;
+import headerImage from '../images/header.webp' ;
 import '../css/TopPageStyle.css';
 
 const TopPage = () => {
 
     return (
         <>
-            <Container>
-                <img className='logo' src={mainLogo} />
-                <h1 className='headerText'>Y's Factoryへようこそ</h1>
-            </Container>
-
+                <img className='logo' src={headerImage} />
            
         </>
     );

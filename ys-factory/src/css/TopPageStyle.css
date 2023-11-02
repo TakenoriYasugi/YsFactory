@@ -1,16 +1,6 @@
-.headerText {
-    box-decoration-break: clone;
-    display: inline;
-    padding: 10px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 2.2;
-    background-color:#eeae89;
-}
-
 .logo {
     max-width: 100%;
     height: auto;
     display: block;
-    box-shadow: 15px 15px 0 #b9ccdd;
+    /* box-shadow: 15px 15px 0 #b9ccdd; */
 }
