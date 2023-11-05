@@ -7,11 +7,13 @@ import { Box, Container, Typography } from '@mui/material';
 import headerImage from '../images/header.webp' ;
 import '../css/TopPageStyle.css';
 import { Link } from 'react-router-dom';
+import DrawerAppBar from '../uiparts/DrawerAppBar';
 
 const TopPage = () => {
 
     return (
         <>
+            <DrawerAppBar/>
             <img className='logo' src={headerImage} />
            
            <Box component='main' sx={{p: 3}}>

@@ -36,7 +36,6 @@ function App() {
     <>
       <CssBaseline/>
       <ThemeProvider theme={theme}>
-        <DrawerAppBar/>
         <RouterProvider router={router} />
       </ThemeProvider>
     </>

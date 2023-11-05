@@ -1,9 +1,12 @@
 import { Typography } from "@mui/material";
+import DrawerAppBar from "../uiparts/DrawerAppBar";
 
 const Works = () => {
     return (
-        <><Typography>This page is Works</Typography>
-        <Typography>Hello</Typography>
+        <>
+            <DrawerAppBar/>
+            <Typography>This page is Works</Typography>
+            <Typography>Hello</Typography>
         </>
     );
 }
