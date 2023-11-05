@@ -5,8 +5,7 @@ const Works = () => {
     return (
         <>
             <DrawerAppBar/>
-            <Typography>This page is Works</Typography>
-            <Typography>Hello</Typography>
+            <Typography>工事中</Typography>
         </>
     );
 }
