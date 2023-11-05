@@ -13,9 +13,21 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
+
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+
+type NavItem = {
+  url: string,
+  text: string
+}
+
+const navItems: NavItem[] = [
+  {url: "/", text: "Home"},
+  {url: "/works",text: "Works"}
+  ];
 
 export default function DrawerAppBar() {
   // Drawer（ハンバーガーメニュー）が開いているかどうかの状態を保持
@@ -34,11 +46,9 @@ export default function DrawerAppBar() {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
+          <ListItem key={item.text} component={props => <Link {...props} href={item.url}/>} disablePadding>
+                <ListItemText primary={item.text}/>
+           </ListItem>
         ))}
       </List>
     </Box>
@@ -70,8 +80,8 @@ export default function DrawerAppBar() {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+              <Button key={item.text} sx={{ color: '#fff' } }>
+                {item.text}
               </Button>
             ))}
           </Box>
