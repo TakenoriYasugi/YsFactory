@@ -3,9 +3,10 @@
  * サイトのトップページに表示するコンテンツ
  */
 
-import { Box, Container, Link, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import headerImage from '../images/header.webp' ;
 import '../css/TopPageStyle.css';
+import { Link } from 'react-router-dom';
 
 const TopPage = () => {
 
@@ -21,7 +22,7 @@ const TopPage = () => {
                 <Box sx={{p: 2}}>
                     <Typography variant='h6' className='heading'>プロフィール</Typography>
                     <Typography sx={{p: 1}}>
-                        1994年10月2日生まれ。1女の父。<br/>中学生時代に始めた<Link href='https://www.tonyu.jp/'>TonyuSystem</Link>によるゲーム制作を通じてプログラミングの楽しさを知る。<br/>
+                        1994年10月2日生まれ。1女の父。<br/>中学生時代に始めた<Link to='https://www.tonyu.jp/'>TonyuSystem</Link>によるゲーム制作を通じてプログラミングの楽しさを知る。<br/>
                         現在はクラウド系SEの傍ら、フリーランスエンジニアへの転身に向けて活動中。
                     </Typography>
                 </Box>
@@ -49,7 +50,7 @@ const TopPage = () => {
                 <Box sx={{p: 2}}>
                     <Typography variant='h6' className='heading'>Git Hub</Typography>
                     <Typography sx={{p: 1}}>
-                        <Link href="https://github.com/TakenoriYasugi/">TakenoriYasugi</Link>
+                        <Link to="https://github.com/TakenoriYasugi/">TakenoriYasugi</Link>
                     </Typography>
                 </Box>
            </Box>
