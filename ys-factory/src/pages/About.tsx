@@ -49,7 +49,7 @@ const About = () => {
                     
                     <Typography variant='h6' className='subheading'>生まれと学びの地、そして情報科学への情熱</Typography>
                     <p>1994年、自然豊かな鳥取県鳥取市の地に生まれた私は、中学時代に出会ったTonyuSystemをきっかけにプログラミングの世界に魅了されました。この早い段階での出会いが、後に技術者としての礎を築くことになります。</p>
-                    <p>2015年、高知大学理学部への入学を果たし、応用理学科情報科学コースで学びを深めながら、基本情報技術者、応用情報技術者試験に合格しました。卒業研究では「視覚障害者向け白杖型歩行支援デバイスの開発」に取り組み、RealSenseを用いた屋外対応の研究を行い、C#（WPF）を駆使したGUIアプリケーションの開発を手がけました。#（WPF）でGUIアプリケーションを開発しました。</p>
+                    <p>2015年、高知大学理学部への入学を果たし、応用理学科情報科学コースで学びを深めながら、基本情報技術者、応用情報技術者試験に合格しました。卒業研究では「視覚障害者向け白杖型歩行支援デバイスの開発」に取り組み、RealSenseを用いた屋外対応の研究を行い、C#（WPF）を駆使したGUIアプリケーションの開発を手がけました。</p>
 
                     <Typography variant='h6' className='subheading'>社会への第一歩と技術者としての成長</Typography>
                     <p>大学卒業後の2019年、私は株式会社日立社会情報サービスに入社。官公庁系システム開発を中心に担当しながら、情報処理安全支援士試験にも合格しました。ICカードを使用した個人認証システムの開発・保守、SwiftによるmacOSクライアントアプリケーション開発、JavaScriptでのブラウザ拡張機能開発、Javaを用いたWebアプリケーションの保守と、多岐にわたるプロジェクトに関わりました。</p>
@@ -65,13 +65,28 @@ const About = () => {
 
             <Box sx={{p: 2}}>
                 <Typography variant='h5' className='heading'>スキルセット</Typography>
+                <Typography variant='h6' className='subheading'>保有資格</Typography>
+                    <Typography sx={{p: 1}}>
+                        <li>基本情報技術者</li>
+                        <li>応用情報技術者</li>
+                        <li>情報処理安全確保支援士(非登録)</li>
+                        <li>AWS Cloud Practitioner</li>
+                        <li>MuleSoft Certified Developer Level 1</li>
+                    </Typography>
+
+                <Typography variant='h6' className='subheading'>開発経験</Typography>
                 <Typography sx={{p: 1}}>
-                    <li>基本情報技術者</li>
-                    <li>応用情報技術者</li>
-                    <li>情報処理安全確保支援士(非登録)</li>
-                    <li>AWS Cloud Practitioner</li>
-                    <li>MuleSoft Certified Developer Level 1</li>
+                    <li>C/C++</li>
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>Swift / Storyboard</li>
+                    <li>Javascript</li>
+                    <li>TypeScript</li>
+                    <li>React / Next.js</li>
+                    <li>Flutter</li>
                 </Typography>
+
+
             </Box>
 
             <Box sx={{p: 2}}>
