@@ -33,7 +33,7 @@ const About = () => {
                                 安木 岳規 （Takenori Yasugi）
                             </Typography>
                             <Typography sx={{p: 1}}>
-                                1994年10月2日生まれ。1女の父。<br/>中学生時代に始めた<Link to='https://www.tonyu.jp/'>TonyuSystem</Link>によるゲーム制作を通じてプログラミングの楽しさを知る。<br/>
+                                1994年10月2日生まれ。一児の父。<br/>中学生時代に始めた<Link to='https://www.tonyu.jp/'>TonyuSystem</Link>によるゲーム制作を通じてプログラミングの楽しさを知る。<br/>
                                 現在はクラウド系SEの傍ら、フリーランスエンジニアへの転身に向けて活動中。
                             </Typography>
                         </CardContent>
