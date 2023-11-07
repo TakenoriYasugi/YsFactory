@@ -7,6 +7,7 @@ import DrawerAppBar from './uiparts/DrawerAppBar';
 import Top from './pages/Top';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Works from './pages/Works';
+import About from './pages/About';
 
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
       path: "/works",
       element: <Works/>,
     },
+    { path: '/about',
+      element: <About/>,
+    }
   ]);
 
   return (
