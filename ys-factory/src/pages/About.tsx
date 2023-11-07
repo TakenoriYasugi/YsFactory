@@ -41,7 +41,7 @@ const About = () => {
                         <li>基本情報技術者</li>
                         <li>応用情報技術者</li>
                         <li>情報処理安全確保支援士(非登録)</li>
-                        <li>AWSクラウドプラクティショナー</li>
+                        <li>AWS Cloud Practitioner</li>
                         <li>MuleSoft Certified Developer Level 1</li>
                     </Typography>
                 </Box>
