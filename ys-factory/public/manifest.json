@@ -3,19 +3,9 @@
   "name": "Y's Facoty Portal Site",
   "icons": [
     {
-      "src": "icon_trimed.png",
-      "sizes": "579x574",
-      "type": "image/png"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "icon_128.ico",
+      "sizes": "128x128",
+      "type": "image/ico"
     }
   ],
   "start_url": ".",
