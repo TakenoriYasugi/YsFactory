@@ -13,10 +13,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Link } from '@mui/material';
+import { Icon, Link } from '@mui/material';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { click } from '@testing-library/user-event/dist/click';
-
 
 const drawerWidth = 240;
 
@@ -83,7 +82,7 @@ const DrawerAppBar = ({title}: {title: string}) => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1}}
+            sx={{ flexGrow: 1, color: 'white'}}
           >
             {title}
           </Typography>
