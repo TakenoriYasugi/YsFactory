@@ -24,6 +24,7 @@ const Top = () => {
                     <Typography>本サイトは安木岳規が運営するポートフォリオサイトです。</Typography>
                 </Box>
 
+                {/* PC表示 */}
                 <Grid container display={{sm: 'flex', xs: 'none'}}>
                     <Grid item xs={6} sx={{p: 4}}>
                         <Card sx={{p: 2}}>
@@ -57,6 +58,38 @@ const Top = () => {
                         </Card>
                     </Grid>
                 </Grid>
+
+                {/* モバイル表示 */}
+                <Container sx={{display: {sm: "none", xs: "block"}}}>
+
+                    <Card sx={{m: 1}}>
+                        <CardActionArea href="/about">
+                            <CardContent>
+                                <Typography fontSize={'medium'}>
+                                    About
+                                </Typography>
+                                <Divider/>
+                                <Typography fontSize={'small'}>
+                                    自己紹介
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+
+                    <Card sx={{m: 1}}>
+                        <CardActionArea href='/works'>
+                            <CardContent>
+                                <Typography fontSize={'medium'}>
+                                    Works
+                                </Typography>
+                                <Divider/>
+                                <Typography fontSize={'small'}>
+                                    開発したプロダクトの紹介
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                </Container>
            </Box>
 
         </>
