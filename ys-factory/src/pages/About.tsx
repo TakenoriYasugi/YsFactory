@@ -21,7 +21,7 @@ const cardContent = <>
 const About = () => {
     return (
         <>
-            <DrawerAppBar/>
+            <DrawerAppBar title="About"/>
             <Container sx={{p: 2}}>
                 <Card>
                     <Stack direction="row" display={{sm: 'flex', xs: 'none'}} sx={{p: 5}}>

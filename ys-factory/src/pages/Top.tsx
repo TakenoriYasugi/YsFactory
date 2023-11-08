@@ -13,7 +13,7 @@ const Top = () => {
 
     return (
         <>
-            <DrawerAppBar/>
+            <DrawerAppBar title="Home"/>
             <Container>
                 <img className='logo' src={headerImage} />
             </Container>
