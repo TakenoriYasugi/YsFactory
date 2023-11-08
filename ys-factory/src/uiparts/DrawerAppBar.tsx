@@ -31,7 +31,7 @@ const navItems: NavItem[] = [
   {url: "/about", text: "About"}
   ];
 
-export default function DrawerAppBar() {
+const DrawerAppBar = ({title}: {title: string}) => {
   // Drawer（ハンバーガーメニュー）が開いているかどうかの状態を保持
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -85,7 +85,7 @@ export default function DrawerAppBar() {
             component="div"
             sx={{ flexGrow: 1}}
           >
-            Y's Factory
+            {title}
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
@@ -119,3 +119,5 @@ export default function DrawerAppBar() {
     </Box>
   );
 }
+
+export default DrawerAppBar;

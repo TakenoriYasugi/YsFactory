@@ -4,7 +4,7 @@ import DrawerAppBar from "../uiparts/DrawerAppBar";
 const Works = () => {
     return (
         <>
-            <DrawerAppBar/>
+            <DrawerAppBar title="Works"/>
             <Typography>工事中</Typography>
         </>
     );
