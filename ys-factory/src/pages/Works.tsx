@@ -9,11 +9,18 @@ const Works = () => {
     return (
         <>
             <DrawerAppBar title="Works"/>
+            <Typography variant="h5" sx={{textAlign: 'center', m: 5}}>繋がらないSNS EchoNor</Typography>
+
+            <Typography variant="body1" sx={{m: 3}}>
+                EchoNor（エコノア）は、「繋がらないSNS」というコンセプトの下開発している、匿名性を重視したSNSです。
+                現在は限られたユーザーに公開しており、フィードバックをもとに改善を続けています。
+                2024年中の一般公開を目指しています。
+            </Typography>
+
             <Container sx={{maxWidth: "500px", maxHeight: "auto"}}>
                 <ImageSwiper/>
             </Container>
 
-            <Typography variant="h5">繋がらないSNS EchoNor</Typography>
 
             <Container sx={{
                 mt: 10,
@@ -30,9 +37,6 @@ const Works = () => {
             <Box sx={{m: 5}}>
             </Box>
             <Box sx={{m: 2}}>
-                <Typography variant="body1">
-                    EchoNor（エコノア）は、「繋がらないSNS」というコンセプトの下開発している、匿名性を重視したSNSです。
-                </Typography>
             </Box>
 
         </>
