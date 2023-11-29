@@ -22,4 +22,13 @@
     font-size: 48px; /* フォントサイズ */
     margin: 10px 0; /* 余白 */
   }
+
+  .grid-contents h6 {
+    text-decoration: underline; /* 下線 */
+    text-decoration-color: blue; /* 下線の色を青色に指定 */
+    font-weight: bold; /* 太字 */
+    color: #333; /* 文字色をダークグレーに設定 */
+    margin-bottom: 10px; /* 下のマージンを10pxに設定 */
+    font-size: 1em; /* フォントサイズを1emに設定 */
+  }
   
