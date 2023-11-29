@@ -232,7 +232,7 @@ const Introduction = () => {
         <>
         {/* <Button onClick={() => setIsOpen(true)}>モーダルを開く</Button> */}
         {/* Modalを中央に表示 */}
-            <Paper sx={{backgroundColor: "#ADD8E6", p: 2, maxWidth: "400px"}}>
+            <Paper id="introduction" sx={{backgroundColor: "#ADD8E6", p: 2, maxWidth: "400px"}}>
                 <Grid container>
                     <Grid item xs={12}>
                         <Box sx={{p: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', width: "100%", maxHeight: "600px"}}>
