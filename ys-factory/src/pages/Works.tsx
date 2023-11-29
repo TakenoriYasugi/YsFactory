@@ -4,12 +4,20 @@ import { Box } from "@mui/system";
 import echonorLogo from "../images/echonor/echonor_logo.png";
 import Introduction from "../uiparts/Introduction";
 import ImageSwiper from "../uiparts/ImageSwiper";
+import "../css/WorksStyle.css";
 
 const Works = () => {
     return (
         <>
             <DrawerAppBar title="Works"/>
-            <Typography variant="h5" sx={{textAlign: 'center', m: 5}}>繋がらないSNS EchoNor</Typography>
+            
+            <Box className="background">
+                <Box className="title-container">
+                    <Typography variant="h4" className="subtitle">繋がらないSNS</Typography>
+                    <Typography variant="h3" className="main-title">EchoNor</Typography>
+                </Box>
+            </Box>
+
 
             <Typography variant="body1" sx={{m: 3}}>
                 EchoNor（エコノア）は、「繋がらないSNS」というコンセプトの下開発している、匿名性を重視したSNSです。

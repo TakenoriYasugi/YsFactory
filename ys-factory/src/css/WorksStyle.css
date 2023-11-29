@@ -1,0 +1,25 @@
+.background {
+    background-color: #121858; /* ブルーの背景色 */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; /* 背景の高さ */
+  }
+  
+  .title-container {
+    text-align: center;
+  }
+  
+  .subtitle {
+    color: #a3d2fc; /* 明るいブルーでサブタイトルの色 */
+    font-size: 24px; /* フォントサイズ */
+    margin: 0;
+  }
+  
+  .main-title {
+    color: #ffffff; /* 白色でメインタイトルの色 */
+    font-size: 48px; /* フォントサイズ */
+    margin: 10px 0; /* 余白 */
+  }
+  
