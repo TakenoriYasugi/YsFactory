@@ -14,7 +14,7 @@ const Top = () => {
     return (
         <>
             <DrawerAppBar title="Home"/>
-            <Container>
+            <Container sx={{display: "flex", justifyContent: "center", textAlign: "center"}}>
                 <img className='logo' src={headerImage} />
             </Container>
            
