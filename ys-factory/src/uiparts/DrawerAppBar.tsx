@@ -25,9 +25,9 @@ type NavItem = {
 }
 
 const navItems: NavItem[] = [
-  {url: "/", text: "Home"},
-  {url: "/works",text: "Works"},
+  {url: "/", text: "Top"},
   {url: "/about", text: "About"},
+  {url: "/works",text: "Works"},
   {url: "/contact", text: "Contact"}
   ];
 
