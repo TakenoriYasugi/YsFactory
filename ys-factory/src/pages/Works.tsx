@@ -9,7 +9,7 @@ import { ReactNode } from "react";
 import styled from "@emotion/styled";
 
 const CardContainer = ({children}: {children: ReactNode}) => (
-    <Card sx={{m: 1, minWidth: "300px", minHeight: "200px", maxWidth: '400px', maxHeight: "400px"}}>
+    <Card sx={{m: 3, minWidth: "250px", minHeight: "200px", maxWidth: '400px', maxHeight: "400px"}}>
         <CardContent>
             {children}
         </CardContent>
