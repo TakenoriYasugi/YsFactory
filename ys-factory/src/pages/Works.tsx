@@ -9,7 +9,7 @@ import { ReactNode } from "react";
 import styled from "@emotion/styled";
 
 const CardContainer = ({children}: {children: ReactNode}) => (
-    <Card sx={{m: 3, minWidth: "300px", minHeight: "200px", maxWidth: '', maxHeight: "400px"}}>
+    <Card sx={{m: 1, minWidth: "300px", minHeight: "200px", maxWidth: '400px', maxHeight: "400px"}}>
         <CardContent>
             {children}
         </CardContent>
@@ -73,7 +73,7 @@ const Works = () => {
                 <ImageSwiper/>
             </Container>
 
-            <Grid container id="grid-contents" sx={{m: 2, display:'flex', justifyContent: 'center', alignContent: "center"}}>
+            <Grid container id="grid-contents" sx={{display:'flex', justifyContent: 'center', alignContent: "center"}}>
                 {contents.map((content, index) => (
                     <Grid item xs={gridXs} sx={{m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>
                         <CardContainer key={index}>
