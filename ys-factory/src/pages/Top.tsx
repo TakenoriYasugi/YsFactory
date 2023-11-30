@@ -6,15 +6,21 @@
 import { Box, Card, CardActionArea, CardContent, Container, Divider, Grid, Typography } from '@mui/material';
 import headerImage from '../images/header_working.png' ;
 import '../css/TopStyle.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import DrawerAppBar from '../uiparts/DrawerAppBar';
+import { url } from 'inspector';
 
 const Top = () => {
 
+    const navigator = useNavigate();
+    const handleLinkClick = (url: string) => {
+        navigator(url);
+    }
+
     return (
         <>
-            <DrawerAppBar title="Home"/>
-            <Container>
+            <DrawerAppBar title="Top"/>
+            <Container sx={{display: "flex", justifyContent: "center", textAlign: "center"}}>
                 <img className='logo' src={headerImage} />
             </Container>
            
@@ -26,9 +32,9 @@ const Top = () => {
 
                 {/* PC表示 */}
                 <Grid container display={{sm: 'flex', xs: 'none'}}>
-                    <Grid item xs={6} sx={{p: 4}}>
+                    <Grid item xs={4} sx={{p: 4}}>
                         <Card sx={{p: 2}}>
-                            <CardActionArea href="/about">
+                            <CardActionArea onClick={() => handleLinkClick("/about")}>
                                 <CardContent>
                                     <Typography fontSize={'medium'}>
                                         About
@@ -42,9 +48,9 @@ const Top = () => {
                         </Card>
                     </Grid>
 
-                    <Grid item xs={6} sx={{p: 4}}>
+                    <Grid item xs={4} sx={{p: 4}}>
                         <Card sx={{p: 2}}>
-                            <CardActionArea href='/works'>
+                            <CardActionArea onClick={() => handleLinkClick("/works")}>
                                 <CardContent>
                                     <Typography fontSize={'medium'}>
                                         Works
@@ -57,13 +63,29 @@ const Top = () => {
                             </CardActionArea>
                         </Card>
                     </Grid>
+
+                    <Grid item xs={4} sx={{p: 4}}>
+                        <Card sx={{p: 2}}>
+                            <CardActionArea onClick={() => handleLinkClick("/contact")}>
+                                <CardContent>
+                                    <Typography fontSize={'medium'}>
+                                        Contact
+                                    </Typography>
+                                    <Divider/>
+                                    <Typography fontSize={'small'}>
+                                        お問い合わせはこちら
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
                 </Grid>
 
                 {/* モバイル表示 */}
                 <Container sx={{display: {sm: "none", xs: "block"}}}>
 
                     <Card sx={{m: 1}}>
-                        <CardActionArea href="/about">
+                        <CardActionArea onClick={() => handleLinkClick("/about")}>
                             <CardContent>
                                 <Typography fontSize={'medium'}>
                                     About
@@ -77,7 +99,7 @@ const Top = () => {
                     </Card>
 
                     <Card sx={{m: 1}}>
-                        <CardActionArea href='/works'>
+                        <CardActionArea onClick={() => handleLinkClick("/works")}>
                             <CardContent>
                                 <Typography fontSize={'medium'}>
                                     Works
@@ -85,6 +107,20 @@ const Top = () => {
                                 <Divider/>
                                 <Typography fontSize={'small'}>
                                     開発したプロダクトの紹介
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+
+                    <Card sx={{m: 1}}>
+                        <CardActionArea onClick={() => handleLinkClick("/contact")}>
+                            <CardContent>
+                                <Typography fontSize={'medium'}>
+                                    Contact
+                                </Typography>
+                                <Divider/>
+                                <Typography fontSize={'small'}>
+                                    お問い合わせはこちら
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

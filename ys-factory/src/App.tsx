@@ -8,6 +8,7 @@ import Top from './pages/Top';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Works from './pages/Works';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
     },
     { path: '/about',
       element: <About/>,
+    },
+    { path: '/contact',
+      element: <Contact/>,
     }
   ]);
 

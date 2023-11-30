@@ -25,9 +25,10 @@ type NavItem = {
 }
 
 const navItems: NavItem[] = [
-  {url: "/", text: "Home"},
+  {url: "/", text: "Top"},
+  {url: "/about", text: "About"},
   {url: "/works",text: "Works"},
-  {url: "/about", text: "About"}
+  {url: "/contact", text: "Contact"}
   ];
 
 const DrawerAppBar = ({title}: {title: string}) => {
@@ -42,6 +43,9 @@ const DrawerAppBar = ({title}: {title: string}) => {
 
 
   const navigate = useNavigate();
+  const handleLinkClick = (url: string) => {
+    navigate(url);
+  }
 
   const drawer = (
     
@@ -53,7 +57,7 @@ const DrawerAppBar = ({title}: {title: string}) => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.text} disablePadding>
-              <ListItemButton sx={{ textAlign: 'center' }} onClick={() => navigate(item.url)}  >
+              <ListItemButton sx={{ textAlign: 'center' }} onClick={() => handleLinkClick(item.url)}  >
                 <ListItemText primary={item.text}/>
               </ListItemButton>
            </ListItem>
@@ -88,7 +92,7 @@ const DrawerAppBar = ({title}: {title: string}) => {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item.text} sx={{ color: '#fff' }} onClick={() => navigate(item.url)}>
+              <Button key={item.text} sx={{ color: '#fff' }} onClick={() => handleLinkClick(item.url)}>
                 {item.text}
               </Button>
             ))}
