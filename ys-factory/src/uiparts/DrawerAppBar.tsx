@@ -27,7 +27,8 @@ type NavItem = {
 const navItems: NavItem[] = [
   {url: "/", text: "Home"},
   {url: "/works",text: "Works"},
-  {url: "/about", text: "About"}
+  {url: "/about", text: "About"},
+  {url: "/contact", text: "Contact"}
   ];
 
 const DrawerAppBar = ({title}: {title: string}) => {
