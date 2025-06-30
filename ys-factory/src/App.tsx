@@ -10,6 +10,7 @@ import Works from './pages/Works';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 
 
 function App() {
@@ -41,7 +42,10 @@ function App() {
     },
     { path: '/blog',
       element: <Blog/>,
-    }
+    },
+    { path: '/blog/:id',
+      element: <BlogDetail/>,
+    },
   ]);
 
   return (
