@@ -9,6 +9,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Works from './pages/Works';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
     },
     { path: '/contact',
       element: <Contact/>,
+    },
+    { path: '/blog',
+      element: <Blog/>,
     }
   ]);
 

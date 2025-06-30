@@ -66,6 +66,22 @@ const Top = () => {
 
                     <Grid item xs={4} sx={{p: 4}}>
                         <Card sx={{p: 2}}>
+                            <CardActionArea onClick={() => handleLinkClick("/blog")}>
+                                <CardContent>
+                                    <Typography fontSize={'medium'}>
+                                        Blog
+                                    </Typography>
+                                    <Divider/>
+                                    <Typography fontSize={'small'}>
+                                        技術ブログ
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
+
+                    <Grid item xs={4} sx={{p: 4}}>
+                        <Card sx={{p: 2}}>
                             <CardActionArea onClick={() => handleLinkClick("/contact")}>
                                 <CardContent>
                                     <Typography fontSize={'medium'}>
@@ -107,6 +123,20 @@ const Top = () => {
                                 <Divider/>
                                 <Typography fontSize={'small'}>
                                     開発したプロダクトの紹介
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+
+                    <Card sx={{m: 1}}>
+                        <CardActionArea onClick={() => handleLinkClick("/blog")}>
+                            <CardContent>
+                                <Typography fontSize={'medium'}>
+                                    Blog
+                                </Typography>
+                                <Divider/>
+                                <Typography fontSize={'small'}>
+                                    技術ブログ
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

@@ -28,6 +28,7 @@ const navItems: NavItem[] = [
   {url: "/", text: "Top"},
   {url: "/about", text: "About"},
   {url: "/works",text: "Works"},
+  {url: "/blog", text: "Blog"},
   {url: "/contact", text: "Contact"}
   ];
 
